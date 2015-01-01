@@ -14,7 +14,7 @@ namespace LogIndex
         public Index()
         {
             Interval = 4 * 1024 * 1024; // 4 MB
-            Parser = new TimecodeParser();
+            Parser = new TimecodeParser(DateTime.Now.Year);
             Splicer = new LineSplicer();
         }
 
@@ -22,6 +22,7 @@ namespace LogIndex
             :this()
 	    {
             LogFile = new FileInfo(Filename);
+            Parser = new TimecodeParser(LogFile.CreationTime.Year);
             if (!LogFile.Exists)
                 throw new ArgumentException("file does not exists");
         }

@@ -10,11 +10,23 @@ namespace LogIndex
     public class TimecodeParser : ITimecodeParser
     {
         private const string format = "MM/dd HH:mm:ss.fff";
+        public int Year { get; set; }
+
+        public TimecodeParser(int year)
+        {
+            Year = year;
+        }
 
         public DateTime Parse(string line)
         {
             var timecode = line.Substring(0, 18);
-            return DateTime.ParseExact(timecode, format, CultureInfo.InvariantCulture);
+            var dt = DateTime.ParseExact(timecode, format, CultureInfo.InvariantCulture);
+            if (Year > 1900)
+            {
+                var diff = Year - dt.Year;
+                return dt.AddYears(diff);
+            }
+            return dt;
         }
     }
 }

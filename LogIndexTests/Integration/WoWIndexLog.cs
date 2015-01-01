@@ -20,6 +20,7 @@ namespace LogIndexTests.Integration
 
             // act
             id.CreateIndex();
+            var p = id.GetPos(new DateTime(2014, 12, 21, 20, 8, 11, 491));
         }
     }
 }
