@@ -10,5 +10,10 @@ namespace LogIndex
     {
         public Position Start { get; set; }
         public Position End { get; set; }
+
+        public long GetOffsetDiff()
+        {
+            return End.Offset - Start.Offset;
+        }
     }
 }
