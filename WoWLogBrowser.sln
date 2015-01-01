@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWLogBrowser", "WoWLogBrowser\WoWLogBrowser.csproj", "{9BB10EA7-2F17-436C-A156-76B7A1D34615}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogIndex", "LogIndex\LogIndex.csproj", "{216A9D10-9C65-4C17-A2C1-66A1F917379C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogIndexTests", "LogIndexTests\LogIndexTests.csproj", "{0B70A5DD-EA4C-4761-95F6-D01F3E2269ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9BB10EA7-2F17-436C-A156-76B7A1D34615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BB10EA7-2F17-436C-A156-76B7A1D34615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BB10EA7-2F17-436C-A156-76B7A1D34615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216A9D10-9C65-4C17-A2C1-66A1F917379C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216A9D10-9C65-4C17-A2C1-66A1F917379C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216A9D10-9C65-4C17-A2C1-66A1F917379C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216A9D10-9C65-4C17-A2C1-66A1F917379C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B70A5DD-EA4C-4761-95F6-D01F3E2269ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B70A5DD-EA4C-4761-95F6-D01F3E2269ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B70A5DD-EA4C-4761-95F6-D01F3E2269ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B70A5DD-EA4C-4761-95F6-D01F3E2269ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
